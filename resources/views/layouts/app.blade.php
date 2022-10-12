@@ -44,6 +44,16 @@
                                     <a class="nav-link" href="{{ route('start') }}">{{ __('Start') }}</a>
                                 </li>
                             @endif
+                            @if (Route::has('start'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('blog') }}">{{ __('Blog') }}</a>
+                                </li>
+                            @endif
+                            @if (Route::has('start'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('contact') }}">{{ __('Contact') }}</a>
+                                </li>
+                            @endi
                             @if (Route::has('login'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>

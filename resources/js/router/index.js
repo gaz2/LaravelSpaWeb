@@ -9,6 +9,8 @@ const Register = () => import('@/components/Register.vue')
 /* Layouts */
 const DahboardLayout = () => import('@/components/layouts/Default.vue')
 const StartLayout = () => import('@/components/layouts/StartDefault.vue')
+const Contact = () => import('@/components/layouts/Contact.vue')
+const Blog = () => import('@/components/layouts/Blog.vue')
 /* Layouts */
 
 /* Authenticated Component */
@@ -17,13 +19,31 @@ const Dashboard = () => import('@/components/Dashboard.vue')
 
 
 const routes = [
-        {
+    {
         name: "start",
         path: "/start",
         component: StartLayout,
         meta: {
             middleware: "guest",
             title: `Start`
+        }
+    },
+    {
+        name: "contact",
+        path: "/contact",
+        component: Contact,
+        meta: {
+            middleware: "guest",
+            title: `Contact`
+        }
+    },
+    {
+        name: "blog",
+        path: "/blog",
+        component: Contact,
+        meta: {
+            middleware: "guest",
+            title: `Blog`
         }
     },
     {

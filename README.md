@@ -1,4 +1,4 @@
-# SPA Authentication using Laravel 9 Sanctum, Vue 3 and Vite
+# SPA Приложение Laravel 9 Sanctum Vue 3 Vite
 
 ```
 composer install
