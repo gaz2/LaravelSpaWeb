@@ -2,16 +2,31 @@
     <div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="https://techvblogs.com/blog/spa-authentication-laravel-9-sanctum-vue3-vite" target="_blank">TechvBlogs</a>
+                <a class="navbar-brand" target="_blank">Sprinthackweb</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" target="_blank">Blog</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <router-link :to="{name:'dashboard'}" class="nav-link">Home <span class="sr-only">(current)</span></router-link>
+                            <router-link :to="{name:'dashboard'}" class="nav-link">Home <span class="sr-only"></span></router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="{name:'dashboard'}" class="nav-link">Home <span class="sr-only"></span></router-link>
                         </li>
                     </ul>
+                
+                    <div class="d-flex">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                            <router-link :to="{name:'dashboard'}" class="nav-link">Logout <span class="sr-only"></span></router-link>
+                            </li>
+                    </ul>
+                    </div>
                     <div class="d-flex">
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">

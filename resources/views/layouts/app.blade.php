@@ -77,6 +77,9 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a> 
+                                    <a href="javascript:void(0)" aria-expanded="false">
+<img src="https://cdn.shouts.dev/contents/defaults/avatar.png" class="is_avatar" alt="avatar">
+</a>
 
                                     <form id="logout-form" action="{{ route('login') }}" method="POST" class="d-none">
                                         @csrf
